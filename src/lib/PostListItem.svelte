@@ -4,7 +4,7 @@
 
 <a href="/blog/{postItem.slug}">
 	<li>
-		<img src="/src/images/{postItem.heroImg}" />
+		<img src="/static/images/{postItem.heroImg}" alt={postItem.title} />
 		<p class="post-title">{postItem.title}</p>
 		<p class="post-date">{postItem.date}</p>
 		<p class="post-desc">{postItem.description}</p>
