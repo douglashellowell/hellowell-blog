@@ -1,0 +1,9 @@
+{
+	"short_name": "Dougs Blog",
+	"name": "Dougs ramblings and junk",
+
+	"start_url": ".",
+	"display": "standalone",
+	"theme_color": "hsl(19, 100%, 59%)",
+	"background_color": "hsl(19, 100%, 59%)"
+}
