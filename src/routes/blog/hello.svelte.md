@@ -17,7 +17,7 @@ lorem
 
 <Counter/>
 
-![dougs img](../../images/demo.png)
+![dougs img](../../../static/images/demo.png)
 
 ```js
 const config = {
