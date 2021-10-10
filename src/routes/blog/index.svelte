@@ -25,7 +25,7 @@
 	import PostListItem from '$lib/PostListItem.svelte';
 	import { post } from '../todos/index.json';
 
-	export const prerender = true;
+	// export const prerender = true;
 
 	export let blogPosts: PostMetaData[];
 	export let topics: string[];
