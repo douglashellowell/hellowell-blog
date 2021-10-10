@@ -61,16 +61,15 @@
 	input[type='radio'] {
 		appearance: none;
 
-		&:focus {
+		/* &:focus {
 			position: relative;
 			top: 0;
 			left: -10px;
-			/* border-bottom: 1px solid green; */
 			width: 100%;
 			outline-color: $doug-orange;
 			outline-style: solid;
 			outline-width: 5px;
-		}
+		} */
 	}
 
 	label {
