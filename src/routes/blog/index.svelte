@@ -2,6 +2,8 @@
 	console.log('hello from blog page');
 	import type { Load } from '@sveltejs/kit';
 
+	export const prerender = true;
+
 	export const load: Load = async ({ fetch }) => {
 		const res = await fetch('/blog.json');
 
@@ -34,6 +36,10 @@
 
 	$: postsToDisplay = blogPosts.filter((post) => post.topic === filter || filter === '');
 </script>
+
+<svelte:head>
+	<title>Douglas Hellowell | Blog</title>
+</svelte:head>
 
 <label class:selected={filter === ''}>All<input type="radio" bind:group={filter} value="" /></label>
 {#each topics as topic}

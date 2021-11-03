@@ -7,40 +7,40 @@
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>Douglas Hellowell | Home</title>
 </svelte:head>
 
 <section>
-	<a href="/blog/hello">hello</a>
-
-	<Counter />
+	<h1>Hey there!</h1>
+	<img src="images/dougmoji.png" alt="dougs face" />
+	<div class="boring-self-wrapper">
+		<p>Oh heck, how do you talk about yourself?</p>
+		<p>
+			I'm a coder, guitar player, coffee drinker, city explorer, events organiser, bad joke maker,
+			UX/UI eyeballer, a11y champion
+		</p>
+		<p>
+			I'm currently a Software Dev, Tutor and Seminar Lead at the Northcoders Bootcamp in
+			Manchester, UK
+		</p>
+		<p>This is a site for me to put down my ideas, music and fun code related content!</p>
+		<p>Head over to <a href="blog">my blog</a> to read some things i've written!</p>
+	</div>
 </section>
 
 <style>
+	img {
+		width: 100px;
+		margin-bottom: 2rem;
+	}
+
+	.boring-self-wrapper {
+		width: 80%;
+	}
+
 	section {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
-		flex: 1;
-	}
-
-	h1 {
-		width: 100%;
-	}
-
-	.welcome {
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
-	}
-
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
 	}
 </style>

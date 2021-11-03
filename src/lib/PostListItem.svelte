@@ -4,10 +4,13 @@
 
 <a href="/blog/{postItem.slug}">
 	<li>
-		<img src="/images/{postItem.heroImg}" alt={postItem.title} />
-		<p class="post-title">{postItem.title}</p>
-		<p class="post-date">{postItem.date}</p>
-		<p class="post-desc">{postItem.description}</p>
+		<div class="side-bar"><span>{postItem.topic}</span></div>
+		<div class="post-content">
+			<img src="/images/{postItem.heroImg}" alt={postItem.title} />
+			<p class="post-title">{postItem.title}</p>
+			<p class="post-date">{postItem.date}</p>
+			<p class="post-desc">{postItem.description}</p>
+		</div>
 	</li>
 </a>
 
@@ -15,7 +18,25 @@
 	li {
 		@include list-item;
 		background-color: $primary-colour;
+		/* padding: 1rem; */
+		display: flex;
+		flex-direction: row;
+	}
+
+	.post-content {
 		padding: 1rem;
+	}
+
+	.side-bar {
+		width: 65px;
+		background-color: black;
+		padding-top: 1rem;
+
+		span {
+			writing-mode: sideways-lr;
+			font-size: 3rem;
+			text-align: center;
+		}
 	}
 
 	img {

@@ -21,18 +21,19 @@
 	</footer>
 </div>
 
-<style>
+<style lang="scss">
 	#main-column {
 		width: 80vw;
 		max-width: 950px;
 		margin: 0 auto;
+		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.425);
 	}
 
 	main {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		padding: 1rem;
+		padding: 1.5rem;
 		box-sizing: border-box;
 		background-color: #fff;
 		border-bottom: 10px solid black;
@@ -44,13 +45,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		padding: 20px;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 40px 0;
-		}
+		/* padding: 20px; */
+		color: white;
+		background-color: $themeRed;
 	}
 
 	@media (max-width: 600px) {

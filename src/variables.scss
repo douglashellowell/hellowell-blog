@@ -5,12 +5,12 @@ $primary-colour: hsl(0, 0%, 100%);
 @mixin card {
 	box-shadow: -5px 10px 0px 2px hsl(19, 100%, 59%);
 	border: 1px solid black;
-	padding: 2rem;
+	// padding: 2rem;
 }
 
 @mixin list-item {
 	@include card;
-	border-left: 20px solid black;
+	// border-left: 60px solid black;
 	margin: 1.5rem 0;
 	transition: 0.2s;
 
@@ -35,5 +35,22 @@ $background-without-opacity: rgba(255, 255, 255, 0.7);
 $column-width: 42rem;
 $column-margin-top: 4rem;
 
-$doug-orange: hsl(19, 100%, 59%);
-$doug-brown: hsl(21, 100%, 81%);
+$doug-orange: hsl(359, 58%, 39%);
+$doug-brown: hsl(194, 35%, 30%);
+
+//  from next proj
+$primary: #f3f3f3;
+$secondary: hsl(18, 100%, 72%);
+$fontColour: black;
+$linkUnvisited: red;
+$primaryCTA: blue;
+$spacing1: 0.5rem;
+$spacing2: 1rem;
+$spacing3: 1.5rem;
+$spacing4: 2rem;
+$themeRed: hsl(359, 58%, 39%);
+$themeGreyBlue: hsl(194, 35%, 30%);
+$themeCream: hsl(51, 100%, 85%);
+$themeGold: hsl(36, 72%, 56%);
+$themeDarkRed: hsl(358, 77%, 19%);
+$mainWidth: 900px;
