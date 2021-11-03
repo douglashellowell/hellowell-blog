@@ -4,7 +4,7 @@ description: playing guitar by the window in my manchester flat
 topic: personal
 date: 11/10/21
 published: true
-# heroImg: demo.png
+heroImg: demo.png
 ---
 
 # untitled
