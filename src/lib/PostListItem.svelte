@@ -6,7 +6,9 @@
 	<li>
 		<div class="side-bar"><span>{postItem.topic}</span></div>
 		<div class="post-content">
-			<img src="/images/{postItem.heroImg}" alt={postItem.title} />
+			{#if postItem.heroImg}
+				<img src="/images/{postItem.heroImg}" alt={postItem.title} />
+			{/if}
 			<p class="post-title">{postItem.title}</p>
 			<p class="post-date">{postItem.date}</p>
 			<p class="post-desc">{postItem.description}</p>
