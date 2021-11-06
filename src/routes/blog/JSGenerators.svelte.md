@@ -42,7 +42,7 @@ const firstResult = oneToFiveGenerator.next();
 console.log(firstResult); // { value: 1, done: false }
 ```
 
-The strange difference between the way this generator executes and the way normals functions run is that it will execute line-by-line **until it reaches a `yield` keyword**. At this point it will **pause** the execution and yield (give back) a results object to wherever it was called. When we iterate again the code will resume from the `yield` keyword and execute until it reaches the next one
+The strange difference between the way this generator executes and the way normal functions run is that it will execute line-by-line **until it reaches a `yield` keyword**. At this point it will **pause** the execution and yield (give back) a results object to wherever it was called. When we iterate again the code will resume from the `yield` keyword and execute until it reaches the next one
 
 ```js
 const secondResult = oneToFiveGenerator.next();

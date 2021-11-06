@@ -10,10 +10,12 @@
 	<Header />
 
 	<main>
-		{#if $page.path.startsWith('/blog/')}
-			<a href="/blog"> &lt; back to blogs</a>
-		{/if}
-		<slot />
+		<div class="main-wrapper">
+			{#if $page.path.startsWith('/blog/')}
+				<a href="/blog"> &lt; back to blogs</a>
+			{/if}
+			<slot />
+		</div>
 	</main>
 
 	<footer>
@@ -27,6 +29,12 @@
 		max-width: 950px;
 		margin: 0 auto;
 		box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.425);
+	}
+
+	.main-wrapper {
+		width: 90%;
+		max-width: 650px;
+		margin: 0 auto;
 	}
 
 	main {
