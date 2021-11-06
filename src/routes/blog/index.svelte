@@ -9,7 +9,7 @@
 
 		if (res.ok) {
 			const blogPosts: PostMetaData[] = await res.json();
-			const topics = blogPosts.map((post) => post.topic);
+			const topics = Array.from(new Set(blogPosts.map((post) => post.topic)));
 			return {
 				props: { blogPosts, topics }
 			};

@@ -20,6 +20,7 @@
 
 *::selection {
 	background-color: $doug-orange;
+	color: white;
 }
 
 body {
@@ -103,6 +104,10 @@ blockquote {
 	padding-left: 10px;
 	margin: 0 3rem;
 	background-color: hsl(0, 3%, 95%);
+
+	@media screen and (max-width: $mob-breakpoint) {
+		margin: 0 1rem;
+	}
 
 	p {
 		padding: 1rem;

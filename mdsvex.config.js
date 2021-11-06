@@ -7,6 +7,10 @@ const config = {
 		dashes: 'oldschool'
 	},
 
+	layout: {
+		blog: './src/routes/blog/layout.svelte'
+	},
+
 	remarkPlugins: [relativeImages],
 	rehypePlugins: []
 };

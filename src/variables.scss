@@ -1,21 +1,18 @@
 /* Variables and mixins declared here will be available in all other SCSS files */
 
+$mob-breakpoint: 600px;
+
 $primary-colour: hsl(0, 0%, 100%);
 
-@mixin card {
-	box-shadow: -5px 10px 0px 2px hsl(19, 100%, 59%);
-	border: 1px solid black;
-	// padding: 2rem;
-}
-
 @mixin list-item {
-	@include card;
-	// border-left: 60px solid black;
+	border: 1px solid black;
+	box-shadow: -5px 5px 0px 2px $doug-brown;
 	margin: 1.5rem 0;
 	transition: 0.2s;
 
 	&:hover {
 		transform: translateY(-10px);
+		box-shadow: -8px 18px 0px 2px $doug-brown;
 	}
 }
 

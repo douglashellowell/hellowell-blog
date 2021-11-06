@@ -12,6 +12,8 @@
 			</li>
 		</ul>
 
+		<img src="images/dougmoji.png" alt="my face" />
+
 		<ul>
 			<li class="contact"><a href="/contact">Contact</a></li>
 		</ul>
@@ -46,28 +48,19 @@
 		top: 0px;
 		background: $doug-orange;
 		z-index: 99;
+		height: 50px;
+		box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.411);
 	}
 
-	.corner {
-		width: 3em;
-		height: 3em;
-		background-color: black;
+	img {
+		width: 50px;
+		opacity: 0;
+
+		&:hover {
+			opacity: 1;
+		}
 	}
 
-	.corner a {
-		color: rgb(255, 255, 255);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 100%;
-		height: 100%;
-	}
-	/* 
-	.corner img {
-		width: 2em;
-		height: 2em;
-		object-fit: contain;
-	} */
 	$background: rgba(255, 255, 255, 0.7);
 	$size: 6px;
 
@@ -91,7 +84,6 @@
 		position: relative;
 		padding: 0;
 		margin: 0;
-		height: 3em;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -103,6 +95,7 @@
 	li {
 		position: relative;
 		height: 100%;
+		width: 70px;
 	}
 
 	/* li.active::before {
@@ -144,9 +137,28 @@
 
 	.contact {
 		background: $themeGold;
+		width: unset;
+
+		a {
+			padding: 0 0.5rem;
+		}
+
 		color: white;
 	}
 
+	.corner {
+		width: 3rem;
+		background-color: black;
+	}
+
+	.corner a {
+		color: rgb(255, 255, 255);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+	}
 	.octicon {
 		fill: currentColor;
 	}

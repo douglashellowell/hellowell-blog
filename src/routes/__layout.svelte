@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { page } from '$app/stores';
-
 	import Header from '$lib/header/Header.svelte';
 	import '../app.scss';
 	import '../code.css';
@@ -11,9 +9,6 @@
 
 	<main>
 		<div class="main-wrapper">
-			{#if $page.path.startsWith('/blog/')}
-				<a href="/blog"> &lt; back to blogs</a>
-			{/if}
 			<slot />
 		</div>
 	</main>
@@ -45,20 +40,22 @@
 		box-sizing: border-box;
 		background-color: #fff;
 		border-bottom: 10px solid black;
-		min-height: 80vh;
+		min-height: calc(100vh - 100px);
 	}
 
 	footer {
+		height: 50px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		/* padding: 20px; */
-		color: white;
 		background-color: $themeRed;
+		p {
+			color: white;
+		}
 	}
 
-	@media (max-width: 600px) {
+	@media (max-width: $mob-breakpoint) {
 		#main-column {
 			width: 100%;
 		}

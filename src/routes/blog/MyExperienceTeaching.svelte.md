@@ -1,7 +1,7 @@
 ---
 title: My experience teaching
 description: Seeing tech education from both sides
-topic: coding
+topic: personal
 date: 06/11/21
 heroImg: js_generators.png
 published: true
@@ -105,7 +105,7 @@ I love teaching.
 
 The most satisfying part of my job as a Tutor at Northcoders is to be helping students with problems later on in the course. I enter a zoom call with them and they start explaining their issue to me as well as what they've tried so far.
 
-> _"We're having an issue trying to update state in this component, we've got state stored here, we're passing down props here, we're making an api call here... let's show you the axios request... we've put a console.log here which we're seeing and it get's back into the .then block but when we log it out after it's not updating!"_
+> _"We're having an issue trying to update state in this component, we've got state stored here, we're passing down props here, we're making an api call here... let's show you the axios request... we've put a console.log here which we're seeing and it get's back into the .then block but when we log it out after it's not updating! Our guess is that it has something to do with [etc etc...]"_
 
 Their tone is a mixture of confusion, curiosity a hint of frustration and all wrapped up in an intense focus on their code and the logic they're using.
 
